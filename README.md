@@ -62,7 +62,7 @@ Login credentials (demo):
 username: admin
 password: admin
 ---
-## 🧠 System Highlights
+🧠 System Highlights
 - Uses session-based authentication (not localStorage)
 - Audit log records:
   - CREATE_NOTE
@@ -71,13 +71,13 @@ password: admin
 - Dashboard analytics loads independently (no stale state)
 - Designed with security & UX considerations
 ---
-## 🎓 Use Case
+🎓 Use Case
 This project is suitable for:
 - University assignments / final projects
 - Portfolio showcase
 - Learning reference for full-stack web development
 ---
-## 👤 Author
+👤 Author
 Bhima Bramasta
 Web Development Enthusiast
 
