@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard | Urban Research Center</title>
+  <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+
+<div class="layout">
+
+  <aside class="sidebar">
+    <h2>Urban RC</h2>
+
+    <button class="nav-btn active"
+      onclick="activate(this); showSection('dashboard')">📊 Dashboard</button>
+
+    <button class="nav-btn"
+      onclick="activate(this); showSection('notes')">🧪 Research Notes</button>
+
+    <button class="nav-btn"
+      onclick="activate(this); showSection('audit')">🧾 Audit Log</button>
+
+    <button class="nav-btn logout"
+      onclick="logout()">🚪 Logout</button>
+  </aside>
+
+  <main class="content">
+    <header class="topbar">
+      Welcome back, <strong>Admin</strong>
+    </header>
+
+    <section id="dashboard-section">
+  <div class="stats">
+    <div class="stat-card">
+      📄 Total Notes<br>
+      <strong id="total-notes">0</strong>
+    </div>
+    <div class="stat-card">📅 Weekly Activity</div>
+    <div class="stat-card">📂 Categories</div>
+  </div>
+
+  <!-- 🔥 INI TEMPAT CHART (TAMBAHAN) -->
+  <div style="
+    margin-top:30px;
+    background:white;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 6px 20px rgba(0,0,0,0.06);
+  ">
+    <h3>Notes Analytics</h3>
+    <canvas id="notesChart" height="120"></canvas>
+  </div>
+</section>
+
+    <section id="notes-section" style="display:none;">
+      <h2>Research Notes</h2>
+
+      <div class="note-form">
+        <input id="title" placeholder="Research Title">
+        <textarea id="content" placeholder="Research Content"></textarea>
+        <button onclick="saveNote()">Save Note</button>
+      </div>
+      
+      <h3 style="margin-top:30px;">Saved Notes</h3>
+      <div id="notes" class="note-grid"></div>
+    </section>
+
+<section id="audit-section" style="display:none;">
+    <h2>Audit Log</h2>
+
+    <table style="width:100%; background:white; border-radius:12px; padding:10px;">
+      <thead>
+        <tr>
+          <th>User</th>
+          <th>Action</th>
+          <th>Note ID</th>
+          <th>Time</th>
+        </tr>
+      </thead>
+      <tbody id="audit-table"></tbody>
+    </table>
+</section>
+
+</div>
+<!-- EDIT MODAL -->
+<div id="edit-modal" class="modal">
+  <div class="modal-content">
+    <h3>Edit Note</h3>
+
+    <input id="edit-title" placeholder="Title">
+    <textarea id="edit-content" placeholder="Content"></textarea>
+
+    <div class="modal-actions">
+      <button onclick="saveEdit()">Save</button>
+      <button class="cancel" onclick="closeModal()">Cancel</button>
+    </div>
+  </div>
+</div>
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="js/chart.js"></script>
+<script src="js/dashboard.js"></script>
+<script src="js/notes.js"></script>
+</body>
+</html>

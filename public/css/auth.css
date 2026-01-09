@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+.auth-container {
+  display: flex;
+  height: 100vh;
+  background: 
+    linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+    url("../assets/bg-city.jpg") center/cover no-repeat;
+}
+
+/* LEFT */
+.auth-left {
+  flex: 1;
+  color: white;
+  padding: 80px;
+}
+
+.auth-left h1 {
+  font-size: 44px;
+  margin-bottom: 10px;
+}
+
+.auth-left p {
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+/* RIGHT */
+.auth-right {
+  width: 420px;
+  background: rgba(255,255,255,0.95);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-card {
+  width: 100%;
+  padding: 40px;
+}
+
+.login-card h2 {
+  margin-bottom: 6px;
+}
+
+.login-card p {
+  margin-bottom: 20px;
+  color: #6B7280;
+}
+
+.login-card input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 14px;
+  border-radius: 8px;
+  border: 1px solid #D1D5DB;
+}
+
+.login-card button {
+  width: 100%;
+  padding: 12px;
+  background: #2563EB;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
