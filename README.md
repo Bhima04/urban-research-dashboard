@@ -46,24 +46,23 @@ research-notes-app/
 ```bash
 npm install
 
-**2. Start MongoDB**
+2. Start MongoDB
 
 Make sure MongoDB is running on:
 
 mongodb://127.0.0.1:27017
 
-**3. Run the server**
+3. Run the server
 node server.js
 
-**4. Open in browser**
+4. Open in browser
 http://localhost:3000
 ---
 Login credentials (demo):
 username: admin
 password: admin
-
-**🧠 System Highlights
-**
+---
+🧠 System Highlights
 - Uses session-based authentication (not localStorage)
 - Audit log records:
   - CREATE_NOTE
@@ -71,13 +70,13 @@ password: admin
   - DELETE_NOTE
 - Dashboard analytics loads independently (no stale state)
 - Designed with security & UX considerations
-
-**🎓 Use Case**
+---
+🎓 Use Case
 This project is suitable for:
 - University assignments / final projects
 - Portfolio showcase
 - Learning reference for full-stack web development
-
-**👤 Author**
+---
+👤 Author
 Bhima Bramasta
 Web Development Enthusiast
